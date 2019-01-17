@@ -1,0 +1,16 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.5"
+cortex-m-rt = "0.6"
+cortex-m-semihosting = ""
+panic-semihosting = "0.5"
+
+[dependencies.hal]
+package = "stm32f1xx-hal"
+features = ["rt", "stm32f103"]
+
