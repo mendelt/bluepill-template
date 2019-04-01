@@ -11,8 +11,8 @@ use hal::stm32;
 
 #[entry]
 fn main() -> ! {
-    let peripherals = cortex_m::Peripherals::take().unwrap();
-    let device = stm32::Peripherals::take().unwrap();
+    let _peripherals = cortex_m::Peripherals::take().unwrap();
+    let _device = stm32::Peripherals::take().unwrap();
 
     hprintln!("Hello semihosting world");
 
