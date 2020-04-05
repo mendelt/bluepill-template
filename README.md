@@ -8,3 +8,9 @@ Install cargo-generate if you don't already have it;
 Generate your project;
 ```cargo generate --git https://github.com/mendelt/bluepill-template```
 
+Configure your project debugger
+Edit .cargo/config, set runner to the executable you use as your debugger.
+
+for example:
+```runner = "arm-none-eabi-gdb -q -x openocd.gdb```
+
