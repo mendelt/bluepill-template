@@ -1,8 +1,7 @@
 #![no_main]
 #![no_std]
 
-#[allow(unused_imports)]
-use panic_semihosting;
+use panic_semihosting as _;
 
 use cortex_m_rt::{entry};
 use cortex_m_semihosting::hprintln;
@@ -17,6 +16,6 @@ fn main() -> ! {
 
     hprintln!("Hello semihosting world");
 
-    loop { }
+    loop { continue }
 }
 
